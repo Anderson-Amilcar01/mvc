@@ -1,0 +1,61 @@
+.container{
+    margin: 2% auto;
+    padding: 10px;
+    width: 25%;
+    height: 20%;
+    border: 1px solid black;
+    box-shadow: 0 0 10px red, 0 0 20px blue;
+    -o-box-shadow: 0 0 10px red, 0  0 20px blue;
+    -moz-box-shadow: 0 0 10px red, 0 0 20px blue;
+    -webkit-box-shadow: 0 0 10px red, 0 0 20px blue;
+}
+
+header{
+    background-color: #f4f40a;
+    padding: 10px;
+    text-align: center;
+
+}
+
+form{
+    margin: 2% auto;
+    padding: 10px;
+    width: 25%;
+    height: 20%
+    
+}
+
+input[type="text"],input[type="password"]{
+    margin: 1%;
+    border-radius: 5%;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50; /* Color de fondo */
+    color: white;              /* Color del texto */
+    margin: 2% 3%;
+    padding: 10px 20%;        /* Espaciado interno */
+    border: none;              /* Sin borde */
+    border-radius: 5px;        /* Bordes redondeados */
+    cursor: pointer;           /* Cambia el cursor al pasar sobre el botón */
+    font-size: 16px;           /* Tamaño de la fuente */
+    font-weight: bold;         /* Grosor de la fuente */
+}
+
+
+label{
+    display: block;
+    font-weight: bold;
+}
+
+a{
+    color: #000;
+}
+
+a:hover{
+    color: #888;;
+}
+
+a:active{
+    color: #080447;
+}
