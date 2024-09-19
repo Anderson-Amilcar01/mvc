@@ -62,5 +62,75 @@ header h1{
 }
 
 .pokemon-types{
-    
+    display: flex;
+    gap: 0.5rem;
 }
+
+.pokemon-types span{
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+/* Colores para los tipos de Pokémon */ 
+.type-normal { background-color: #A8A878; }
+    .type-fire { background-color:#F08030; }
+    .type-water { background-color: #6890F0; }
+    .type-grass { background-color:#78C850; }
+    .type-electric { background-color:#F8D030; }
+    .type-ice{ background-color: #98D8D8; }
+    .type-fighting { background-color:#c03028; }
+    .type-poison { background-color:#A040A0; }
+    .type-ground { background-color: #E0C068; }
+    .type-flying{ background-color:#A890F0; }
+    .type-psychic { background-color: #F85888; }
+    .type-bug {background-color:#A8B820; }
+    .type-rock{ background-color: #B8A038; }
+    .type-ghost {background-color:#705898; }
+    .type-dragon { background-color: #7038F8; }
+    .type-dark { background-color: #705848; }
+    .type-steel { background-color: #B8B8D0; }
+    .type-fairy { background-color:#EE99AC; }
+
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+    .pagination a{
+        text-decoration: none;
+        color: #cc0000;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        border: 2px solid #cc0000;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+ .pagination a:hover{
+    background-color: #cc0000;
+    color:white;
+ }
+
+ .pagination span{
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    color: #333;
+ }
+
+ @media (max-width:768px){
+    .pokemon-grid{
+        grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+        gap: 1rem;
+        padding: 1rem;
+    }
+    header h1{
+        font-size: 2rem;
+    }
+ }

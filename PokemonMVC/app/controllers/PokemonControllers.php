@@ -7,11 +7,16 @@ class PokemonController{
     public function __construct(PokemonModel $model){
         $this->model=$model;
     }
-    public function index($page=1){
-        $config=require BASE_PATH .'config/config.php';
-        $itemsPerpage=$config['items_per_page'];
-        $PokemonList=$this->model->getPokemonList(page:$page,itemsPerPage:$itemsPerpage);
-        include BASE_PATH.'views/layaut.php';
+    public function index($page = 1) {
+        $config = require BASE_PATH . 'config/config.php';
+        $itemsPerPage = $config['items_per_page'];
+    
+        // Obtener la lista de Pokémon desde el modelo
+        $pokemonList = $this->model->getPokemonList($page, $itemsPerPage);
+    
+        // Asegúrate de que la variable $pokemonList se pase a la vista
+        include BASE_PATH . 'views/layout.php';
     }
+    
 }
 ?>

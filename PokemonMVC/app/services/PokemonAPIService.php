@@ -6,13 +6,13 @@ class PokemonAPIService{
     }
     public function getPokemonList($offset,$limit){
         $url=$this->api_url."pokemon?offset={$offset}&limit={$limit}";
-        $response=file_get_contents(filename:$url);
-        return json_decode(json:$response,associative:true);
+        $response=file_get_contents($url);
+        return json_decode($response,true);
     }
     public function getPokemonDetails($name){
         $url=$this->api_url."pokemon/{$name}";
-        $response=file_get_contents(filename:$url);
-        return json_decode(json:$response,associative:true);
+        $response=file_get_contents($url);
+        return json_decode($response,true);
     }
 }
 ?>
