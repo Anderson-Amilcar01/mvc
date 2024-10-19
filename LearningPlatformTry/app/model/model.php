@@ -32,6 +32,27 @@ class UserModel {
                 echo 'Error: ' . $e->getMessage();
             }
     }
+
+    public function cursan($idu, $idc, $nota) {
+    try {
+        // Preparar la consulta SQL
+        $sql = "INSERT INTO curso_usuario (id_usuario, id_curso, nota) VALUES (:idu, :idc, :nota)";
+        
+        // Preparar la ejecución
+        $stmt = $this->db->prepare($sql);
+        
+        // Vincular parámetros
+        $stmt->bindParam(':idu', $idu);
+        $stmt->bindParam(':idc', $idc);
+        $stmt->bindParam(':nota', $nota);
+        
+        // Ejecutar la consulta
+        return $stmt->execute();
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
+    }
+}
+
    
     public function rol($email) {
         try {
