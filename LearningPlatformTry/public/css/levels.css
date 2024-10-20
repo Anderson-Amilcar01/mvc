@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 10px;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 600px;
+    background-color: white;
+    border: 1px solid #ccc;
+    overflow: scroll;
+    text-align: left;
+    padding: 10px;
+}
+
+.hover {
+    transform: translateY(-10px);
+    transform: scale(1.12);
+    cursor: pointer;
+}
+
+.platform {
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background-color: #1E90FF;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+
+    transition: .5s;
+}
+
+#character {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    background-color: grey;
+    left: 20%; /* Inicialmente en la primera plataforma */
+    top: 80%; /* Inicialmente en la primera plataforma */
+    border-radius: 5px;
+}
+
+#trophy {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: url('trophy.png') no-repeat center center;
+    background-size: contain;
+    left: 80%;
+    top: 30%;
+}
+
+h2 {
+    margin-left: 20px;
+}
