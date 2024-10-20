@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.back-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.back-btn:hover {
+    background-color: #555;
+}
+
+.post-summary {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+header h1 {
+    font-size: 1.8em;
+    word-wrap: break-word;  /* Permite que las palabras largas se dividan en varias líneas */
+    max-width: 100%;  /* Asegura que el título no exceda el ancho del contenedor */
+    margin: 10px 0;  /* Añade espacio para separar el título del resto del contenido */
+    text-align: center; 
+    /* opcional
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);*/
+}
+
+.post-summary h2 {
+    font-size: 1.5em;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+.post-summary p {
+    color: #666;
+}
+
+a{
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #555;
+}
+
+.comentario {
+    margin-top: 40px;
+}
+
+.comentario {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.comment-form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.comment-form button:hover {
+    background-color: #555;
+}
+
+.back-button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.back-button button:hover {
+    background-color: #555;
+}
