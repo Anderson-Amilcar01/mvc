@@ -11,6 +11,8 @@
         <h1>Foro de Discusión</h1>
         
         <button class="back-btn">← Volver</button>
+
+        <button class="create-forum-btn" id="openModalBtn">Crear Foro</button>
     </header>
     <main>
         <section class="post-summary">
@@ -26,8 +28,26 @@
             </p>
         </section>
         <!-- Agrega más preguntas-->
+         <!--modal-->
+         
     </main>
+    <div id="createForumModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Crear un Nuevo Foro</h2>
+            <form>
+                <label for="forum-title">Título del Foro:</label><br>
+                <input type="text" id="forum-title" name="forum-title" required><br><br>
 
+                <label for="forum-description">Descripción:</label><br>
+                <textarea id="forum-description" name="forum-description" rows="5" required></textarea><br><br>
+
+                <button type="submit" class="submit-btn">Crear Foro</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+     
     <!-- opcional (te retrocede a la pagina anterior)
     <script>
         document.querySelector('.back-btn').addEventListener('click', function() {
